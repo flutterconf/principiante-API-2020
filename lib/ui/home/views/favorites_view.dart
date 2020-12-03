@@ -6,7 +6,7 @@ class FavoritesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Favoritos')
+      child: Text('hola'),
     );
   }
 
