@@ -1,11 +1,12 @@
+import 'package:amongus_generator/data/models/amongus_character.dart';
 import 'package:flutter/material.dart';
 
-import 'package:amongus_generator/core/models/amongus_character.dart';
-
-class Character extends StatelessWidget {
+class CharacterAmoungUs extends StatelessWidget {
   final AmongUsCharacter amongUsCharacter;
 
-  const Character({Key key, this.amongUsCharacter}) : super(key: key);
+  const CharacterAmoungUs(AmongUsCharacter data,
+      {Key key, this.amongUsCharacter})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
