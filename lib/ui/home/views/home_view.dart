@@ -50,8 +50,10 @@ class HomeView extends StatelessWidget {
                           return Character(
                             amongUsCharacter: snapshot.data,
                           );
+                        } else if (snapshot.hasError) {
+                          return Text("Could not load character", style: TextStyle(color: Colors.white),);
                         } else {
-                          return Text("Loading...");
+                          return Text("Loading...", style: TextStyle(color: Colors.white),);
                         }
                       }))
             ],
