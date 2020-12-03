@@ -43,23 +43,17 @@ class HomeView extends StatelessWidget {
           Column(
             children: [
               Center(
-                  child:
-                      /*Character(
-                    amongUsCharacter: AmongUsCharacter.fromJson(
-                        jsonDecode("{\"name\":\"Kenkro\",\"image\":\"assets\/players\/crewmate-9.png\",\"color\":\"green\",\"hexColor\":\"ff06822c\",\"hasHat\":true}")
-                    ),
-                  )*/
-                      FutureBuilder<AmongUsCharacter>(
-                          future: futureCharacter,
-                          builder: (context, snapshot) {
-                            if (snapshot.hasData) {
-                              return Character(
-                                amongUsCharacter: snapshot.data,
-                              );
-                            } else {
-                              return Text("Loading...");
-                            }
-                          }))
+                  child: FutureBuilder<AmongUsCharacter>(
+                      future: futureCharacter,
+                      builder: (context, snapshot) {
+                        if (snapshot.hasData) {
+                          return Character(
+                            amongUsCharacter: snapshot.data,
+                          );
+                        } else {
+                          return Text("Loading...");
+                        }
+                      }))
             ],
           )
         ],
