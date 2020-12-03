@@ -1,7 +1,6 @@
+import 'package:amongus_generator/presentation/home/views/favorites_view.dart';
+import 'package:amongus_generator/presentation/home/views/home_view.dart';
 import 'package:flutter/material.dart';
-
-import 'package:amongus_generator/ui/home/views/favorites_view.dart';
-import 'package:amongus_generator/ui/home/views/home_view.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
