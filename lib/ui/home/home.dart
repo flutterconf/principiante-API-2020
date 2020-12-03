@@ -25,7 +25,10 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: IndexedStack(
-        children: [HomeView(), FavoritesView()],
+        children: [
+          HomeView(),
+          FavoritesView()
+        ],
         index: _selectedIndex,
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -35,11 +38,11 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            title: Text('Home')
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            label: 'Favorites',
+            title: Text('Favorito')
           ),
         ],
         onTap: (int index) {
